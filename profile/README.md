@@ -108,7 +108,7 @@ git clone --recursive https://github.com/Javafest2025/meta.git
 cd meta
 
 # Start the entire platform
-docker-compose up --build
+./Scripts/docker.sh start-all
 
 # 🎉 Access ScholarAI at http://localhost:3000
 ```
