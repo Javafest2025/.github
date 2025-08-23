@@ -219,8 +219,8 @@ This repository is maintained by the **ScholarAI team** under the `Javafest2025`
 
 ### 🧑‍💻 Core Developers
 
-| Name | GitHub | Role |
-|:---|:---|:---|
+| Name | GitHub |
+|:---|:---|
 | **Tasriad Ahmed Tias** | [@Tasriad](https://github.com/Tasriad) | 
 | **Farhad Al-Amin Dipto** | [@Legend-2727](https://github.com/Legend-2727) | 
 
