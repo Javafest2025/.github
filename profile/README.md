@@ -343,7 +343,7 @@ If you find ScholarAI innovative and useful:
 
 **Built with ❤️ for the academic community**
 
-[Website](https://scholar-ai.vercel.app) • [Documentation](docs/) • [Demo Video](https://youtu.be/demo) • [Javafest 2025](https://www.therapjavafest.com/)
+[Website](https://scholarai.me) • [Documentation](docs/) • [Demo Video](https://youtu.be/demo) • [Javafest 2025](https://www.therapjavafest.com/)
 
 ---
 
