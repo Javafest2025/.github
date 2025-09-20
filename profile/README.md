@@ -95,7 +95,7 @@ Our project is organized across multiple repositories under the **Javafest2025**
 | [`notification_service`](https://github.com/Javafest2025/notification_service) | 🔔 Email & notification system | Java, RabbitMQ |
 | [`service_registry`](https://github.com/Javafest2025/service_registry) | 🔍 Eureka service discovery | Java, Spring Cloud |
 | [`meta`](https://github.com/Javafest2025/meta) | 🔗 Git submodules orchestration | Shell, Docker |
-| [`paper_search`](https://github.com/Javafest2025/paper_search) | 🤖 AI-powered research paper search | Python, FastAPI |
+| [`paper-search`](https://github.com/Javafest2025/paper-search) | 🤖 AI-powered research paper search | Python, FastAPI |
 | [`extractor`](https://github.com/Javafest2025/extractor) | 📑 PDF/metadata extraction service | Python, FastAPI |
 | [`gap_analyzer`](https://github.com/Javafest2025/gap_analyzer) | 📊 Research gap analysis assistant | Python, FastAPI |
 
@@ -286,7 +286,7 @@ This project is **proprietary** and developed exclusively for **Javafest 2025**.
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Javafest2025/notification_service?style=for-the-badge&logo=spring&label=Notification%20Commits)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Javafest2025/service_registry?style=for-the-badge&logo=spring&label=Registry%20Commits)
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Javafest2025/paper_search?style=for-the-badge&logo=python&label=Paper%20Search%20Commits)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Javafest2025/paper-search?style=for-the-badge&logo=python&label=Paper%20Search%20Commits)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Javafest2025/extractor?style=for-the-badge&logo=python&label=Extractor%20Commits)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Javafest2025/gap_analyzer?style=for-the-badge&logo=python&label=Gap%20Analyzer%20Commits)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Javafest2025/docs?style=for-the-badge&logo=markdown&label=Docs%20Commits)
@@ -314,7 +314,7 @@ This project is **proprietary** and developed exclusively for **Javafest 2025**.
 | [`notification_service`](https://github.com/Javafest2025/notification_service) | 🔔 Notifications | ![Status](https://img.shields.io/github/last-commit/Javafest2025/notification_service?style=flat&logo=spring) | Email system active |
 | [`service_registry`](https://github.com/Javafest2025/service_registry) | 🔍 Service discovery | ![Status](https://img.shields.io/github/last-commit/Javafest2025/service_registry?style=flat&logo=spring) | Registry operational |
 | [`docs`](https://github.com/Javafest2025/docs) | 📚 Documentation | ![Status](https://img.shields.io/github/last-commit/Javafest2025/docs?style=flat&logo=markdown) | Comprehensive docs |
-| [`paper_search`](https://github.com/Javafest2025/paper_search) | 🤖 AI-powered research paper search | ![Status](https://img.shields.io/github/last-commit/Javafest2025/paper_search?style=flat&logo=python) | Semantic search engine |
+| [`paper-search`](https://github.com/Javafest2025/paper-search) | 🤖 AI-powered research paper search | ![Status](https://img.shields.io/github/last-commit/Javafest2025/paper-search?style=flat&logo=python) | Semantic search engine |
 | [`extractor`](https://github.com/Javafest2025/extractor) | 📑 PDF/metadata extraction service | ![Status](https://img.shields.io/github/last-commit/Javafest2025/extractor?style=flat&logo=python) | Data extraction functional |
 | [`gap_analyzer`](https://github.com/Javafest2025/gap_analyzer) | 📊 Research gap analysis assistant | ![Status](https://img.shields.io/github/last-commit/Javafest2025/gap_analyzer?style=flat&logo=python) | Gap analysis enabled |
 
