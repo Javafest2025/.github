@@ -1,4 +1,6 @@
-# 🎓 [ScholarAI](https://scholarai.me)
+# 🎓 ScholarAI  
+👉 [Visit Website](https://scholarai.me)
+
 
 <div align="center">
 
