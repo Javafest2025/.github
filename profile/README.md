@@ -1,5 +1,8 @@
 # 🎓 ScholarAI  
-👉 [Visit Website](https://scholarai.me)
+⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛  
+✨ **[👉 VISIT SCHOLARAI WEBSITE 👈](https://scholarai.me)** ✨  
+⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+
 
 
 <div align="center">
