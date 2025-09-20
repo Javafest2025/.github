@@ -14,8 +14,8 @@
 *Built for Javafest 2025 - The Ultimate Battle of Brains & Bytes*
 
 [![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white)](https://openjdk.org/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.0-6DB33F?style=flat&logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
-[![Next.js](https://img.shields.io/badge/Next.js-14+-000000?style=flat&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.4-6DB33F?style=flat&logo=spring&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Next.js](https://img.shields.io/badge/Next.js-15+-000000?style=flat&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-Private-red?style=flat&logo=github&logoColor=white)](#license)
@@ -35,7 +35,7 @@ Researchers currently struggle with:
 - **Information Overload**: Manually sifting through thousands of papers
 - **Context Loss**: Losing track of insights across different platforms
 - **Citation Chaos**: Manually managing references and formatting
-- **Collaboration Barriers**: No unified workspace for team research
+- **LLM underused**: Wated potential of LLM in research autmation
 
 ### ✨ Our Solution
 
@@ -46,7 +46,7 @@ A **single, context-aware workspace** that seamlessly integrates:
 💬 **Contextual Q&A Chat** - Highlight any passage for instant AI explanations  
 📝 **AI-Augmented LaTeX Editor** - Live preview with intelligent writing assistance  
 📊 **Impact Tracking Dashboard** - Monitor citations and research performance  
-🤝 **Collaborative Workspaces** - Team-based project management  
+🤝 **LLM AI integrated tools** -   Unlock the full potential of LLM in the research workflow
 
 ---
 
@@ -58,7 +58,7 @@ A **single, context-aware workspace** that seamlessly integrates:
 
 | **Frontend** | **Backend** | **AI Services** | **Infrastructure** |
 |:---:|:---:|:---:|:---:|
-| Next.js 14+ | Spring Boot 3.5.0 | FastAPI (Python) | Docker |
+| Next.js 15+ | Spring Boot 3.5.4 | FastAPI (Python) | Docker |
 | TypeScript | Java 21 | Google Gemini | PostgreSQL |
 | Tailwind CSS | Maven | RabbitMQ | Redis |
 | Radix UI | JPA/Hibernate | Semantic Scholar API | Eureka Discovery |
@@ -69,14 +69,16 @@ A **single, context-aware workspace** that seamlessly integrates:
 
 ```
 📦 ScholarAI Platform
-├── 🎨 Frontend (Next.js)                    → Port 3000
-├── 🚪 API Gateway (Spring Cloud)            → Port 8989
-├── 🔍 Service Registry (Eureka)             → Port 8761
-├── 👤 User Service (Authentication)         → Port 8081
-├── 📂 Project Service (Research Projects)   → Port 8083
-├── 🔔 Notification Service (Alerts)         → Port 8082
-├── 🤖 AI Paper Search Agent (FastAPI)       → Port 8084
-└── 🧠 AI Writing Assistant (FastAPI)        → Port 8085
+├── 🎨 Frontend (Next.js)                    
+├── 🚪 API Gateway (Spring Cloud)            
+├── 🔍 Service Registry (Eureka)             
+├── 👤 User Service (Authentication)         
+├── 📂 Project Service (Research Projects)   
+├── 🔔 Notification Service (Alerts)         
+├── 🤖 AI Paper Search Agent (FastAPI)       
+├── 🧠 ML-driven extractor (FastAPI)        
+└── 📊 Gap Analyzer Service (FastAPI)        
+
 ```
 
 ### 🗂️ Repository Structure
@@ -93,6 +95,10 @@ Our project is organized across multiple repositories under the **Javafest2025**
 | [`notification_service`](https://github.com/Javafest2025/notification_service) | 🔔 Email & notification system | Java, RabbitMQ |
 | [`service_registry`](https://github.com/Javafest2025/service_registry) | 🔍 Eureka service discovery | Java, Spring Cloud |
 | [`meta`](https://github.com/Javafest2025/meta) | 🔗 Git submodules orchestration | Shell, Docker |
+| [`paper_search`](https://github.com/Javafest2025/paper_search) | 🤖 AI-powered research paper search | Python, FastAPI |
+| [`extractor`](https://github.com/Javafest2025/extractor) | 📑 PDF/metadata extraction service | Python, FastAPI |
+| [`gap_analyzer`](https://github.com/Javafest2025/gap_analyzer) | 📊 Research gap analysis assistant | Python, FastAPI |
+
 
 ---
 
@@ -151,27 +157,18 @@ cd meta
 - **📖 Paper Web Search**: Integration with Semantic Scholar, arXiv, CrossRef
 - **🔍 Smart PDF Viewer**: Annotation and highlighting capabilities
 - **🤖 AI Summarization**: Automated extraction of key insights
-- **⭐ Quality Scoring**: AI critic evaluates paper relevance and quality
 - **🎯 Gap Analysis**: Identifies unexplored research opportunities
 - **💬 Contextual Chat**: Highlight-to-ask AI assistance
 
 ### ✍️ Active Research Phase
 - **📝 AI-Powered LaTeX Editor**: Live preview with intelligent suggestions
 - **📚 Smart Citations**: Auto-complete and format references
-- **✅ Writing Review**: AI feedback following academic standards
-- **🔗 Template Generation**: Convert topic suggestions to structured outlines
-
-### 📈 Post-Research Phase
-- **📊 Impact Dashboard**: Track citations and research metrics
-- **📈 Performance Analytics**: Monitor paper downloads and views
-- **🔔 Citation Alerts**: Notifications when your work is cited
-- **📄 Export Reports**: Generate comprehensive impact summaries
 
 ### 🔐 General Platform Features
 - **🛡️ Secure Authentication**: JWT + OAuth2 (Google, GitHub)
 - **👥 User Profiles**: Customizable researcher profiles
 - **🌙 Dark/Light Mode**: Personalized interface themes
-- **🔔 Smart Notifications**: Configurable alerts and reminders
+- **🔔 Smart Notifications**: Email and in-app notification 
 - **📱 Responsive Design**: Seamless experience across devices
 
 ---
@@ -180,21 +177,16 @@ cd meta
 
 ### 🔌 Service Endpoints
 
-| Service | Base URL | Documentation |
-|:---|:---|:---|
-| API Gateway | `http://localhost:8989` | [Gateway Docs](docs/API/api-gateway.md) |
-| User Service | `http://localhost:8081` | [User API](docs/API/user-service.md) |
-| Project Service | `http://localhost:8083` | [Project API](docs/API/project-service.md) |
-| Notification Service | `http://localhost:8082` | [Notification API](docs/API/notification-service.md) |
+| Service | Documentation |
+|:---|:---|
+| 🚪 API Gateway | http://localhost:8989/swagger-ui/index.html |
+| 👤 User Service | http://localhost:8081/docs |
+| 🔔 Notification Service | http://localhost:8082/docs |
+| 📂 Project Service | http://localhost:8083/docs |
+| 🤖 Paper Search Service | http://localhost:8001/docs |
+| 📑 Extractor Service | http://localhost:8002/api/v1/docs |
+| 📊 Gap Analyzer Service | http://localhost:8003/docs#/ |
 
-### 📋 Use Cases
-
-Explore our comprehensive use case documentation:
-
-- [🔐 Authentication & Authorization](docs/Usecase/general-usecases.md)
-- [🔍 Pre-Research Workflows](docs/Usecase/pre-research-usecases.md)
-- [✍️ Active Research Workflows](docs/Usecase/ongoing-research-usecases.md)
-- [📈 Post-Research Analytics](docs/Usecase/post-research-usecases.md)
 
 ---
 
@@ -262,13 +254,10 @@ git push origin feature/amazing-feature
 
 ## 📚 Documentation
 
-| Document | Description |
+| Document Repository | Description |
 |:---|:---|
-| [🏗️ Architecture Guide](docs/Schema/) | System design and database schemas |
-| [🔌 API Reference](docs/API/) | Complete API documentation |
-| [🎯 Use Cases](docs/Usecase/) | Detailed user workflows |
-| [🐳 Docker Guide](DOCKER_README.md) | Container deployment instructions |
-| [📝 Development Log](LEARNING_SUMMARY.md) | Technical learning journey |
+| [📚 Docs Repository](https://github.com/Javafest2025/docs) | Complete project documentation including architecture, APIs, use cases, and guides |
+
 
 ---
 
@@ -316,18 +305,7 @@ This project is **proprietary** and developed exclusively for **Javafest 2025**.
 - **📝 Comprehensive Documentation**: Detailed API docs, use cases, and setup guides
 - **🐳 Production-Ready**: Fully dockerized with orchestration scripts
 - **🧪 Testing Coverage**: Unit tests and E2E testing implemented
-- **🎨 Modern Tech Stack**: Latest versions of Spring Boot 3.5.0, Next.js 14+, Java 21
-
-### 🚀 Recent Milestones
-
-- ✅ **Complete Microservices Setup**: All 6 backend services operational
-- ✅ **Frontend Integration**: Modern React-based UI with TypeScript
-- ✅ **Docker Orchestration**: One-command deployment system
-- ✅ **Authentication System**: JWT + OAuth2 social login implementation
-- ✅ **API Gateway Configuration**: Centralized routing and load balancing
-- ✅ **Documentation Complete**: Full technical documentation and use cases
-- 🔄 **AI Integration**: Paper search and LaTeX editor (in progress)
-- 🔄 **Advanced Features**: Impact tracking and analytics (in progress)
+- **🎨 Modern Tech Stack**: Latest versions of Spring Boot 3.5.4, Next.js 15+, Java 21
 
 ---
 
